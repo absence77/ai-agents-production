@@ -1,0 +1,15 @@
+{
+  "pod": "crash-deploy-5fcdc87555-tjhgc",
+  "namespace": "default",
+  "timestamp": "2026-04-30T15:50:35.749860",
+  "phase": "Running",
+  "reason": "CrashLoopBackOff",
+  "restart_count": 2,
+  "exit_code": 1,
+  "node": "worker-2",
+  "recent_logs": "Starting",
+  "events": "Started container app Successfully pulled image \"busybox\" in 769ms (769ms including waiting). Image size: 2222002 bytes. Back-off restarting failed container app in pod crash-deploy-5fcdc87555-tjhgc_default(4b07adb1-4b02-4273-8e12-7c2d00340532)",
+  "severity": "MEDIUM",
+  "environment": "prod",
+  "auto_fix_allowed": true
+}

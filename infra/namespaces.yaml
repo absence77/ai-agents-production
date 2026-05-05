@@ -1,0 +1,150 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    creationTimestamp: "2026-05-04T10:02:21Z"
+    labels:
+      kubernetes.io/metadata.name: cka-day1
+    name: cka-day1
+    resourceVersion: "5696701"
+    uid: 8a75e6f6-f66c-4e83-b8c5-3edeb3b97bb2
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    creationTimestamp: "2026-05-04T11:38:44Z"
+    labels:
+      kubernetes.io/metadata.name: cka-debug
+    name: cka-debug
+    resourceVersion: "5706526"
+    uid: 3c6ba416-5f42-4704-b187-0942edc7e311
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    creationTimestamp: "2026-05-01T01:53:16Z"
+    labels:
+      kubernetes.io/metadata.name: cka-exam
+    name: cka-exam
+    resourceVersion: "5212722"
+    uid: 75a68bf5-c49a-41a7-bb2c-2f0e99284697
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    creationTimestamp: "2026-03-08T15:29:08Z"
+    labels:
+      kubernetes.io/metadata.name: default
+    name: default
+    resourceVersion: "30"
+    uid: 6c8844aa-6938-4df7-880e-564999da648c
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Namespace","metadata":{"annotations":{},"labels":{"app.kubernetes.io/instance":"ingress-nginx","app.kubernetes.io/name":"ingress-nginx"},"name":"ingress-nginx"}}
+    creationTimestamp: "2026-03-30T02:19:04Z"
+    labels:
+      app.kubernetes.io/instance: ingress-nginx
+      app.kubernetes.io/name: ingress-nginx
+      kubernetes.io/metadata.name: ingress-nginx
+    name: ingress-nginx
+    resourceVersion: "572320"
+    uid: 7d7b955d-88b7-44e3-9fb6-42a9625b66fc
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    creationTimestamp: "2026-03-08T15:29:08Z"
+    labels:
+      kubernetes.io/metadata.name: kube-node-lease
+    name: kube-node-lease
+    resourceVersion: "16"
+    uid: 2211c0bd-2f90-4a95-98f0-74b3c87f6e00
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    creationTimestamp: "2026-03-08T15:29:08Z"
+    labels:
+      kubernetes.io/metadata.name: kube-public
+    name: kube-public
+    resourceVersion: "12"
+    uid: 798b722b-93ca-423c-9063-a5f9ee144270
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    creationTimestamp: "2026-03-08T15:29:08Z"
+    labels:
+      kubernetes.io/metadata.name: kube-system
+    name: kube-system
+    resourceVersion: "9"
+    uid: 658e4ae1-44e6-427e-ba1a-0616e3d1a50d
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    creationTimestamp: "2026-05-01T03:03:00Z"
+    labels:
+      kubernetes.io/metadata.name: production
+    name: production
+    resourceVersion: "5220060"
+    uid: e9fa2aee-afe8-48c0-afee-24dbe8f0048c
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    creationTimestamp: "2026-05-04T01:45:55Z"
+    labels:
+      kubernetes.io/metadata.name: project-alpha
+    name: project-alpha
+    resourceVersion: "5649208"
+    uid: 8d39851d-b9f3-41d5-96fd-b26cdc239220
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+kind: List
+metadata:
+  resourceVersion: ""

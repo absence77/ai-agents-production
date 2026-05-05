@@ -1,0 +1,6 @@
+USER-SUPPLIED VALUES:
+grafana:
+  adminPassword: admin123
+prometheus:
+  prometheusSpec:
+    retention: 7d

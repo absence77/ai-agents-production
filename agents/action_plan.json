@@ -1,0 +1,15 @@
+{
+  "incident_pod": "crash-deploy-5fcdc87555-tjhgc",
+  "incident_namespace": "default",
+  "severity": "MEDIUM",
+  "environment": "prod",
+  "auto_fix_allowed": true,
+  "root_cause": "CrashLoopBackOff",
+  "fix_command": "kubectl rollout restart deployment/crash-deploy -n default",
+  "fallback_command": "kubectl delete pod crash-deploy-5fcdc87555-tjhgc -n default",
+  "fix_description": "Restart the workload to clear transient crash state",
+  "risk_level": "LOW",
+  "source": "known_fix",
+  "confidence": 0.85,
+  "llm_analysis": "1. The pod crash-deploy-5fcdc87555-tjhgc in namespace default is experiencing a CrashLoopBackOff due to the container repeatedly exiting with an exit code of 1, despite successfully pulling the \"busybox\" image.\n2. This issue impacts the availability and reliability of the deployment as the pod cannot reach a stable state, leading to potential service disruptions.\n3. The suggested fix of kubectl rollout restart deployment/crash-deploy -n default may help if the problem is transient or related to the container's environment setup. However, it does not address underlying issues such as configuration errors or resource constraints that might be causing the pod to crash repeatedly. Further investigation into the logs and container behavior is recommended before applying this fix."
+}

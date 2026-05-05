@@ -1,0 +1,137 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: PersistentVolume
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"PersistentVolume","metadata":{"annotations":{},"labels":{"type":"local"},"name":"exam-pv"},"spec":{"accessModes":["ReadWriteOnce"],"capacity":{"storage":"1Gi"},"hostPath":{"path":"/mnt/exam-data"},"storageClassName":"manual"}}
+      pv.kubernetes.io/bound-by-controller: "yes"
+    creationTimestamp: "2026-05-01T02:09:24Z"
+    finalizers:
+    - kubernetes.io/pv-protection
+    labels:
+      type: local
+    name: exam-pv
+    resourceVersion: "5214610"
+    uid: cd3b8934-b8ef-4278-ac40-b2cc0870fc90
+  spec:
+    accessModes:
+    - ReadWriteOnce
+    capacity:
+      storage: 1Gi
+    claimRef:
+      apiVersion: v1
+      kind: PersistentVolumeClaim
+      name: exam-pvc
+      namespace: cka-exam
+      resourceVersion: "5214608"
+      uid: 1914460a-4988-47d3-90f3-5b4e6d5f4821
+    hostPath:
+      path: /mnt/exam-data
+      type: ""
+    persistentVolumeReclaimPolicy: Retain
+    storageClassName: manual
+    volumeMode: Filesystem
+  status:
+    lastPhaseTransitionTime: "2026-05-01T02:10:39Z"
+    phase: Bound
+- apiVersion: v1
+  kind: PersistentVolume
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"PersistentVolume","metadata":{"annotations":{},"labels":{"type":"local"},"name":"safari-pv"},"spec":{"accessModes":["ReadWriteOnce"],"capacity":{"storage":"1Gi"},"hostPath":{"path":"/mnt/data"},"storageClassName":"manual"}}
+      pv.kubernetes.io/bound-by-controller: "yes"
+    creationTimestamp: "2026-05-04T02:11:43Z"
+    finalizers:
+    - kubernetes.io/pv-protection
+    labels:
+      type: local
+    name: safari-pv
+    resourceVersion: "5652027"
+    uid: 9cba0803-df65-4bc8-be5e-9c9f221c4689
+  spec:
+    accessModes:
+    - ReadWriteOnce
+    capacity:
+      storage: 1Gi
+    claimRef:
+      apiVersion: v1
+      kind: PersistentVolumeClaim
+      name: safari-pvc
+      namespace: default
+      resourceVersion: "5652025"
+      uid: 9e29fd07-2e68-4f74-b3b4-14517bc2a6a8
+    hostPath:
+      path: /mnt/data
+      type: ""
+    persistentVolumeReclaimPolicy: Retain
+    storageClassName: manual
+    volumeMode: Filesystem
+  status:
+    lastPhaseTransitionTime: "2026-05-04T02:12:57Z"
+    phase: Bound
+- apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"PersistentVolumeClaim","metadata":{"annotations":{},"name":"exam-pvc","namespace":"cka-exam"},"spec":{"accessModes":["ReadWriteOnce"],"resources":{"requests":{"storage":"1Gi"}},"storageClassName":"manual"}}
+      pv.kubernetes.io/bind-completed: "yes"
+      pv.kubernetes.io/bound-by-controller: "yes"
+    creationTimestamp: "2026-05-01T02:10:39Z"
+    finalizers:
+    - kubernetes.io/pvc-protection
+    name: exam-pvc
+    namespace: cka-exam
+    resourceVersion: "5214612"
+    uid: 1914460a-4988-47d3-90f3-5b4e6d5f4821
+  spec:
+    accessModes:
+    - ReadWriteOnce
+    resources:
+      requests:
+        storage: 1Gi
+    storageClassName: manual
+    volumeMode: Filesystem
+    volumeName: exam-pv
+  status:
+    accessModes:
+    - ReadWriteOnce
+    capacity:
+      storage: 1Gi
+    phase: Bound
+- apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"PersistentVolumeClaim","metadata":{"annotations":{},"name":"safari-pvc","namespace":"default"},"spec":{"accessModes":["ReadWriteOnce"],"resources":{"requests":{"storage":"500Mi"}},"storageClassName":"manual"}}
+      pv.kubernetes.io/bind-completed: "yes"
+      pv.kubernetes.io/bound-by-controller: "yes"
+    creationTimestamp: "2026-05-04T02:12:57Z"
+    finalizers:
+    - kubernetes.io/pvc-protection
+    name: safari-pvc
+    namespace: default
+    resourceVersion: "5652029"
+    uid: 9e29fd07-2e68-4f74-b3b4-14517bc2a6a8
+  spec:
+    accessModes:
+    - ReadWriteOnce
+    resources:
+      requests:
+        storage: 500Mi
+    storageClassName: manual
+    volumeMode: Filesystem
+    volumeName: safari-pv
+  status:
+    accessModes:
+    - ReadWriteOnce
+    capacity:
+      storage: 1Gi
+    phase: Bound
+kind: List
+metadata:
+  resourceVersion: ""
