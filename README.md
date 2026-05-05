@@ -12,10 +12,10 @@ Originally developed during a **CKA (Certified Kubernetes Administrator)** prepa
 
 ## Tech Stack
 - **Orchestration:** Kubernetes (K8s)
-- **AI Engine:** OpenClaw (Claude 3.5 Sonnet / Haiku)[cite: 12]
+- **AI Engine:** OpenClaw (Claude 3.5 Sonnet / Haiku)
 - **Language:** Python 3.x
-- **Infrastructure:** Hetzner Cloud[cite: 12]
-- **Methodology:** RAG (Retrieval-Augmented Generation) for Incident Analysis[cite: 12]
+- **Infrastructure:** Hetzner Cloud
+- **Methodology:** RAG (Retrieval-Augmented Generation) for Incident Analysis
 
 ## Agent Architecture
 1. **Agent 01 (Detector):** Monitors K8s events and detects `CrashLoopBackOff` or `NotFound` statuses.
