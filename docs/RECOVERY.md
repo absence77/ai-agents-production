@@ -2,11 +2,11 @@
 Generated: 2026-05-05
 
 ## Cluster nodes
-- master-1: 37.27.41.55
-- worker-1: 37.27.86.7
-- worker-2: 204.168.150.77
-- JumpServer: 65.109.160.208 (helm installed here)
-- AI Server: 204.168.252.69 (agents, webhook, RAG)
+- master-1: <MASTER_IP>
+- worker-1: <WORKER1_IP>
+- worker-2: <WORKER2_IP>
+- JumpServer: <JUMPSERVER_IP> (helm installed here)
+- AI Server: <AI_SERVER_IP> (agents, webhook, RAG)
 
 ## Step 1 — Restore monitoring (from JumpServer)
 helm install monitoring prometheus-community/kube-prometheus-stack \

@@ -143,10 +143,10 @@ After 2 months of production: **22 incidents · 368 KB · 100% retrieval accurac
 Internet
     |
     v
-JumpServer (65.109.160.208) ──── kubectl ────> master-1 (37.27.41.55)
+JumpServer ──── kubectl ────> master-1
                                                     |
-AI Server (204.168.252.69)                    worker-1 (37.27.86.7)
-├── webhook_v2.py (FastAPI :8080)             worker-2 (204.168.150.77)
+AI Server                                     worker-1
+├── webhook_v2.py (FastAPI :8080)             worker-2
 ├── ChromaDB (RAG memory)
 ├── multi_agent/ (Python agents)          namespace: production
 └── OpenClaw (3 Telegram bots)            ├── Prometheus

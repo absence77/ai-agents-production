@@ -24,7 +24,7 @@ app = FastAPI()
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
-JUMP_SERVER = "root@65.109.160.208"
+JUMP_SERVER = os.getenv("JUMP_SERVER", "root@jumpserver")
 SSH_KEY = "/root/.ssh/id_jumpserver"
 
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
